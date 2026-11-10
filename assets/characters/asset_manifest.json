@@ -1,5 +1,5 @@
 {
-  "asset": "Dusk Frontier original T-pose operative",
+  "asset": "Dusk Frontier V2.10 T-pose player operative",
   "format": "glTF 2.0 binary",
   "original": true,
   "bones": 18,
@@ -13,7 +13,7 @@
     "Shoot",
     "Reload"
   ],
-  "mesh_primitives": 10,
-  "triangles": 2832,
-  "sha256": "eb794e5f3fe6705bb3ba09b8040a163de918ff337f2faf056449ba871346e348"
+  "mesh_primitives": 11,
+  "triangles": 3148,
+  "sha256": "48e507a94aebae97de626d60239097d30b588241d3b487f8f3cf61bfde3fa7db"
 }

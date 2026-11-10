@@ -1,0 +1,205 @@
+{
+  "version": "2.10",
+  "source": "Borderland_V210_Full_Godot_Project.zip",
+  "glb_assets": [
+    {
+      "file": "assets/characters/operative.glb",
+      "bytes": 165620,
+      "nodes": 29,
+      "meshes": 11,
+      "skins": 1,
+      "animations": [
+        "Tpose",
+        "Idle",
+        "Walk",
+        "Run",
+        "Crouch",
+        "Aim",
+        "Shoot",
+        "Reload"
+      ],
+      "sha256": "48e507a94aebae97de626d60239097d30b588241d3b487f8f3cf61bfde3fa7db"
+    },
+    {
+      "file": "assets/characters/operative_hostile.glb",
+      "bytes": 166596,
+      "nodes": 30,
+      "meshes": 12,
+      "skins": 1,
+      "animations": [
+        "Tpose",
+        "Idle",
+        "Walk",
+        "Run",
+        "Crouch",
+        "Aim",
+        "Shoot",
+        "Reload"
+      ],
+      "sha256": "14a42c734550557633426611a49073df26c7ce2062e18a0ab46150cb1ae5abd7"
+    },
+    {
+      "file": "assets/modules/DF210_Container_ServiceBlue.glb",
+      "bytes": 26364,
+      "nodes": 45,
+      "meshes": 44,
+      "skins": 0,
+      "animations": [],
+      "sha256": "02c734696a7b94f7b4d3c5388b1e520164d2af457167229b1b37ea4cff5c8310"
+    },
+    {
+      "file": "assets/modules/DF210_Fence_IndustrialPanel.glb",
+      "bytes": 11256,
+      "nodes": 17,
+      "meshes": 16,
+      "skins": 0,
+      "animations": [],
+      "sha256": "e92cf6b13ba0708e1158b0c0ae85d6dc182103b73ea9c1d9b6c5a4c3d99b0214"
+    },
+    {
+      "file": "assets/modules/DF210_Ground_AsphaltPatch.glb",
+      "bytes": 208468,
+      "nodes": 2,
+      "meshes": 1,
+      "skins": 0,
+      "animations": [],
+      "sha256": "e8c4efa5f5a986f7f2b2cfb3cb16f82978fd3be0083230dc1c23bf5e2b440650"
+    },
+    {
+      "file": "assets/modules/DF210_Pallet_BundledCargo.glb",
+      "bytes": 20268,
+      "nodes": 36,
+      "meshes": 35,
+      "skins": 0,
+      "animations": [],
+      "sha256": "7ed57496dfb14071013465208d2f7b1be48d3d6db497acb33936a6a85e772d07"
+    },
+    {
+      "file": "assets/modules/DF210_Tank_Vertical.glb",
+      "bytes": 20628,
+      "nodes": 24,
+      "meshes": 23,
+      "skins": 0,
+      "animations": [],
+      "sha256": "6524484dcaad67b29ad77737985bc26a3fc2b98285dc7bd491f2308fa6f4a1cb"
+    },
+    {
+      "file": "assets/modules/DF_ART_ConcreteCover.glb",
+      "bytes": 3712,
+      "nodes": 6,
+      "meshes": 5,
+      "skins": 0,
+      "animations": [],
+      "sha256": "fd2c7c6e6f6113dbb23b9591ad21cfe316fe147a27f93fe8f0937fbd10cb9a9f"
+    },
+    {
+      "file": "assets/modules/DF_ART_DockLight.glb",
+      "bytes": 3408,
+      "nodes": 5,
+      "meshes": 4,
+      "skins": 0,
+      "animations": [],
+      "sha256": "7e4e4751e824a36e841c36c35587f3782eee7c558d8bd26cc47a17b11367dafe"
+    },
+    {
+      "file": "assets/modules/DF_ART_HarborAnnex_Roof.glb",
+      "bytes": 7476,
+      "nodes": 21,
+      "meshes": 20,
+      "skins": 0,
+      "animations": [],
+      "sha256": "aed27b581db7377b337c11f6d78f40290fd08d122f87ac4da4e5f45e9ff95ea9"
+    },
+    {
+      "file": "assets/modules/DF_ART_HarborAnnex_Walls.glb",
+      "bytes": 19024,
+      "nodes": 40,
+      "meshes": 39,
+      "skins": 0,
+      "animations": [],
+      "sha256": "f41eb74908635c491d0f4051a9860749b5b1604074ba5146fc56fd3c696aa586"
+    },
+    {
+      "file": "assets/modules/DF_ART_PalletSupply.glb",
+      "bytes": 4500,
+      "nodes": 9,
+      "meshes": 8,
+      "skins": 0,
+      "animations": [],
+      "sha256": "b315be9d28932e33b58f2d1a1ff11c043d3336396b40a06e4fe4f681b98cddd9"
+    },
+    {
+      "file": "assets/modules/DF_MOD_ConcreteBarrier.glb",
+      "bytes": 2584,
+      "nodes": 4,
+      "meshes": 3,
+      "skins": 0,
+      "animations": [],
+      "sha256": "1433491144d108a1ced3fffb8217918091bd381fae8dc8dfe3a970fd791edc03"
+    },
+    {
+      "file": "assets/modules/DF_MOD_Container.glb",
+      "bytes": 12528,
+      "nodes": 22,
+      "meshes": 21,
+      "skins": 0,
+      "animations": [],
+      "sha256": "9ac312e97f311a83baf2986e620e347fb9836aa28bfd079a1d0f71af698d4e72"
+    },
+    {
+      "file": "assets/modules/DF_MOD_ExtractionBeacon.glb",
+      "bytes": 3520,
+      "nodes": 6,
+      "meshes": 4,
+      "skins": 0,
+      "animations": [],
+      "sha256": "4f5e7a7bcbcd8ec6bb9fdfef3ec73197df5edb30a407ec5ca1a4d32cd07b457e"
+    },
+    {
+      "file": "assets/modules/DF_MOD_SupplyCrate.glb",
+      "bytes": 2480,
+      "nodes": 4,
+      "meshes": 3,
+      "skins": 0,
+      "animations": [],
+      "sha256": "e21b4bcf220d99e70ca30378273738c20bc2ac7126b348e65c1c7b62961ab99f"
+    },
+    {
+      "file": "assets/modules/DF_MOD_Warehouse.glb",
+      "bytes": 9532,
+      "nodes": 16,
+      "meshes": 15,
+      "skins": 0,
+      "animations": [],
+      "sha256": "8366c63f46c914eac875c9778cfd2e14ffb708ea0ca9a52ce7120377bb40996e"
+    },
+    {
+      "file": "assets/weapons/DF_WPN_M01_Pistol.glb",
+      "bytes": 6144,
+      "nodes": 9,
+      "meshes": 6,
+      "skins": 0,
+      "animations": [],
+      "sha256": "173485009cc7a3a72560df9f52697c0793b47613e66330d7dd2ab99112ad7bbb"
+    },
+    {
+      "file": "assets/weapons/DF_WPN_R07_Rifle.glb",
+      "bytes": 9472,
+      "nodes": 15,
+      "meshes": 12,
+      "skins": 0,
+      "animations": [],
+      "sha256": "116a0958cc96b8e514b8b898dddd9fe2bbd5249f22d8ab4c861946c38e0c2416"
+    },
+    {
+      "file": "assets/weapons/DF_WPN_S12_Shotgun.glb",
+      "bytes": 7184,
+      "nodes": 10,
+      "meshes": 7,
+      "skins": 0,
+      "animations": [],
+      "sha256": "c61960a9c1ca1320bd3a5dcb943fb8d7214b4eb01e1fbd841612ac029c6e5974"
+    }
+  ],
+  "png_material_count": 24
+}

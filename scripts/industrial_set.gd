@@ -125,11 +125,11 @@ func lamp(pos: Vector3, lighting: bool = true) -> void:
         add_child(omni)
 
 func construct() -> void:
-    box("Wet concrete compound", Vector3(0,-.13,0),Vector3(42.0,.25,34.0),Color("39758c"),true,.18,.53)
+    box("Wet concrete compound", Vector3(0,-.13,0),Vector3(42.0,.25,34.0),Color("343f42"),true,.18,.53)
     for x in range(-19,21,4):
-        box("Expansion joint", Vector3(float(x),.012,0),Vector3(.038,.022,32),Color("275669"),false)
+        box("Expansion joint", Vector3(float(x),.012,0),Vector3(.038,.022,32),Color("252f33"),false)
     for z in range(-15,16,4):
-        box("Concrete joint",Vector3(0,.013,float(z)),Vector3(40,.023,.03),Color("295a6c"),false)
+        box("Concrete joint",Vector3(0,.013,float(z)),Vector3(40,.023,.03),Color("293337"),false)
     for x in [-20.4,20.4]:
         box("Perimeter blast wall",Vector3(x,1.8,0),Vector3(.65,3.6,34),Color("4d5c64"),true,.2)
     for z in [-16.8,16.8]:
@@ -145,7 +145,7 @@ func construct() -> void:
     for i in range(5):
         var x := -8.4 + float(i) * 4.0
         barrier(Vector3(x,.0,4.5 if i%2 == 0 else -.9))
-    var palette := [Color("427588"), Color("6b5147"),Color("596454"),Color("435765")]
+    var palette := [Color("3e565a"), Color("66534b"),Color("4d594e"),Color("394b4e")]
     for i in range(4):
         var x := 8.0 + float(i % 2) * 4.5
         var z := .7 + float(int(i / 2)) * 5.7
