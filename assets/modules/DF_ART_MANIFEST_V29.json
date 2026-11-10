@@ -1,0 +1,62 @@
+[
+  {
+    "file": "DF_ART_HarborAnnex_Walls.glb",
+    "purpose": "HarborAnnex_Walls",
+    "size_m": [
+      10.22,
+      5.0,
+      10.56
+    ],
+    "meshes": 39,
+    "source": "Original procedural authored for Dusk Frontier V2.9",
+    "format": "glTF 2.0 GLB, metres, Y up"
+  },
+  {
+    "file": "DF_ART_HarborAnnex_Roof.glb",
+    "purpose": "HarborAnnex_Roof",
+    "size_m": [
+      10.1,
+      0.4,
+      8.34
+    ],
+    "meshes": 20,
+    "source": "Original procedural authored for Dusk Frontier V2.9",
+    "format": "glTF 2.0 GLB, metres, Y up"
+  },
+  {
+    "file": "DF_ART_ConcreteCover.glb",
+    "purpose": "ConcreteCover",
+    "size_m": [
+      3.88,
+      1.44,
+      1.16
+    ],
+    "meshes": 5,
+    "source": "Original procedural authored for Dusk Frontier V2.9",
+    "format": "glTF 2.0 GLB, metres, Y up"
+  },
+  {
+    "file": "DF_ART_PalletSupply.glb",
+    "purpose": "PalletSupply",
+    "size_m": [
+      1.45,
+      0.89,
+      1.38
+    ],
+    "meshes": 8,
+    "source": "Original procedural authored for Dusk Frontier V2.9",
+    "format": "glTF 2.0 GLB, metres, Y up"
+  },
+  {
+    "file": "DF_ART_DockLight.glb",
+    "purpose": "DockLight",
+    "size_m": [
+      2.72,
+      5.53,
+      0.68
+    ],
+    "meshes": 4,
+    "source": "Original procedural authored for Dusk Frontier V2.9",
+    "format": "glTF 2.0 GLB, metres, Y up"
+  }
+]

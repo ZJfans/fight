@@ -1,0 +1,19 @@
+{
+  "project": "Dusk Frontier V2.9",
+  "units": "metres",
+  "formats": ["GLB glTF 2.0", "PNG albedo and roughness"],
+  "authored_this_version": [
+    "DF_ART_HarborAnnex_Walls.glb",
+    "DF_ART_HarborAnnex_Roof.glb",
+    "DF_ART_ConcreteCover.glb",
+    "DF_ART_PalletSupply.glb",
+    "DF_ART_DockLight.glb",
+    "7 material families x albedo+roughness"
+  ],
+  "retained_from_prior_version": ["operative.glb", "operative_hostile.glb", "DF_WPN_R07_Rifle.glb", "DF_WPN_S12_Shotgun.glb", "DF_WPN_M01_Pistol.glb"],
+  "animated_character": {"skeleton_bones": 18, "animation_names": ["Tpose", "Idle", "Walk", "Run", "Crouch", "Aim", "Shoot", "Reload"], "weapon_socket": "Weapon"},
+  "weapons_muzzle_node": "Muzzle",
+  "camera": {"elevation_degrees": 54, "fov_degrees": 40, "zoom_range": [24,33], "orientation": "fixed"},
+  "licenses": "New assets original to this project; prior original assets retained",
+  "validation": "GLB structural inspection only; Godot runtime unavailable"
+}

@@ -1,0 +1,14 @@
+{
+  "desktop": {
+    "poseAssertions": "pass",
+    "pageErrors": [],
+    "webgl2": false,
+    "gameState": "playing"
+  },
+  "mobile": {
+    "poseAssertions": "pass",
+    "pageErrors": [],
+    "webgl2": false,
+    "gameState": "playing"
+  }
+}

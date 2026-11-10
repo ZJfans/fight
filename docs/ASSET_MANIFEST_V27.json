@@ -1,0 +1,313 @@
+{
+  "project": "Dusk Frontier V2.7",
+  "camera": {
+    "elevation_deg": 54,
+    "vertical_fov_deg": 40,
+    "camera_yaw_deg": 90,
+    "look_ahead_meters": 2.3,
+    "zoom_target_meters": [
+      24,
+      33
+    ],
+    "wheel_increment_meters": 1.2,
+    "mode": "fixed behind player; WebGL true perspective; Canvas weak-perspective warp"
+  },
+  "assets": [
+    {
+      "file": "assets/weapons/DF_WPN_M01_Pistol.glb",
+      "bytes": 6144,
+      "nodes": 9,
+      "meshes": 6,
+      "markers": [
+        "Muzzle",
+        "Grip"
+      ],
+      "unit": "meters",
+      "license": "Original - Dusk Frontier",
+      "bounds_m": {
+        "min": [
+          -0.0305,
+          -0.2345,
+          -0.261
+        ],
+        "max": [
+          0.0305,
+          0.069,
+          0.0555
+        ]
+      },
+      "size_m": [
+        0.061,
+        0.3035,
+        0.3165
+      ],
+      "sha256": "173485009cc7a3a72560df9f52697c0793b47613e66330d7dd2ab99112ad7bbb"
+    },
+    {
+      "file": "assets/weapons/DF_WPN_R07_Rifle.glb",
+      "bytes": 9472,
+      "nodes": 15,
+      "meshes": 12,
+      "markers": [
+        "Muzzle",
+        "Grip"
+      ],
+      "unit": "meters",
+      "license": "Original - Dusk Frontier",
+      "bounds_m": {
+        "min": [
+          -0.047,
+          -0.25,
+          -0.853
+        ],
+        "max": [
+          0.047,
+          0.1355,
+          0.335
+        ]
+      },
+      "size_m": [
+        0.094,
+        0.3855,
+        1.188
+      ],
+      "sha256": "116a0958cc96b8e514b8b898dddd9fe2bbd5249f22d8ab4c861946c38e0c2416"
+    },
+    {
+      "file": "assets/weapons/DF_WPN_S12_Shotgun.glb",
+      "bytes": 7184,
+      "nodes": 10,
+      "meshes": 7,
+      "markers": [
+        "Muzzle",
+        "Grip"
+      ],
+      "unit": "meters",
+      "license": "Original - Dusk Frontier",
+      "bounds_m": {
+        "min": [
+          -0.055,
+          -0.0905,
+          -0.87
+        ],
+        "max": [
+          0.064,
+          0.074,
+          0.35
+        ]
+      },
+      "size_m": [
+        0.119,
+        0.1645,
+        1.22
+      ],
+      "sha256": "c61960a9c1ca1320bd3a5dcb943fb8d7214b4eb01e1fbd841612ac029c6e5974"
+    },
+    {
+      "file": "assets/modules/DF_MOD_ConcreteBarrier.glb",
+      "bytes": 2584,
+      "nodes": 4,
+      "meshes": 3,
+      "markers": [],
+      "unit": "meters",
+      "license": "Original - Dusk Frontier",
+      "bounds_m": {
+        "min": [
+          -1.8,
+          0.0,
+          -0.48
+        ],
+        "max": [
+          1.8,
+          1.31,
+          0.48
+        ]
+      },
+      "size_m": [
+        3.6,
+        1.31,
+        0.96
+      ],
+      "sha256": "1433491144d108a1ced3fffb8217918091bd381fae8dc8dfe3a970fd791edc03"
+    },
+    {
+      "file": "assets/modules/DF_MOD_Container.glb",
+      "bytes": 12528,
+      "nodes": 22,
+      "meshes": 21,
+      "markers": [],
+      "unit": "meters",
+      "license": "Original - Dusk Frontier",
+      "bounds_m": {
+        "min": [
+          -1.25,
+          0.005,
+          -3.08
+        ],
+        "max": [
+          1.2505,
+          2.65,
+          3.07
+        ]
+      },
+      "size_m": [
+        2.5005,
+        2.645,
+        6.15
+      ],
+      "sha256": "9ac312e97f311a83baf2986e620e347fb9836aa28bfd079a1d0f71af698d4e72"
+    },
+    {
+      "file": "assets/modules/DF_MOD_ExtractionBeacon.glb",
+      "bytes": 3520,
+      "nodes": 6,
+      "meshes": 4,
+      "markers": [
+        "ExtractionTrigger"
+      ],
+      "unit": "meters",
+      "license": "Original - Dusk Frontier",
+      "bounds_m": {
+        "min": [
+          -0.65,
+          0.0,
+          -0.65
+        ],
+        "max": [
+          0.65,
+          2.4875,
+          0.65
+        ]
+      },
+      "size_m": [
+        1.3,
+        2.4875,
+        1.3
+      ],
+      "sha256": "4f5e7a7bcbcd8ec6bb9fdfef3ec73197df5edb30a407ec5ca1a4d32cd07b457e"
+    },
+    {
+      "file": "assets/modules/DF_MOD_SupplyCrate.glb",
+      "bytes": 2480,
+      "nodes": 4,
+      "meshes": 3,
+      "markers": [],
+      "unit": "meters",
+      "license": "Original - Dusk Frontier",
+      "bounds_m": {
+        "min": [
+          -0.5,
+          0.0,
+          -0.525
+        ],
+        "max": [
+          0.5,
+          1.04,
+          0.525
+        ]
+      },
+      "size_m": [
+        1.0,
+        1.04,
+        1.05
+      ],
+      "sha256": "e21b4bcf220d99e70ca30378273738c20bc2ac7126b348e65c1c7b62961ab99f"
+    },
+    {
+      "file": "assets/modules/DF_MOD_Warehouse.glb",
+      "bytes": 9532,
+      "nodes": 16,
+      "meshes": 15,
+      "markers": [],
+      "unit": "meters",
+      "license": "Original - Dusk Frontier",
+      "bounds_m": {
+        "min": [
+          -6.35,
+          0.0,
+          -4.85
+        ],
+        "max": [
+          6.35,
+          5.16,
+          4.85
+        ]
+      },
+      "size_m": [
+        12.7,
+        5.16,
+        9.7
+      ],
+      "sha256": "8366c63f46c914eac875c9778cfd2e14ffb708ea0ca9a52ce7120377bb40996e"
+    },
+    {
+      "file": "assets/characters/operative.glb",
+      "bytes": 151016,
+      "bones": 18,
+      "animations": [
+        "Tpose",
+        "Idle",
+        "Walk",
+        "Run",
+        "Crouch",
+        "Aim",
+        "Shoot",
+        "Reload"
+      ],
+      "unit": "meters",
+      "license": "Original - Dusk Frontier",
+      "bounds_m": {
+        "min": [
+          -0.88,
+          0.019,
+          -0.276
+        ],
+        "max": [
+          0.88,
+          1.846,
+          0.3255
+        ]
+      },
+      "size_m": [
+        1.76,
+        1.827,
+        0.6015
+      ],
+      "sha256": "eb794e5f3fe6705bb3ba09b8040a163de918ff337f2faf056449ba871346e348"
+    },
+    {
+      "file": "assets/characters/operative_hostile.glb",
+      "bytes": 154568,
+      "bones": 18,
+      "animations": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Crouch",
+        "Shoot",
+        "Reload"
+      ],
+      "unit": "meters",
+      "license": "Original - Dusk Frontier",
+      "bounds_m": {
+        "min": [
+          -0.394,
+          0.019,
+          -1.295
+        ],
+        "max": [
+          0.394,
+          1.846,
+          0.3255
+        ]
+      },
+      "size_m": [
+        0.788,
+        1.827,
+        1.6205
+      ],
+      "sha256": "8becc60fa78221bfc3067d73310515dbf24cb6d756211855e539ea5cd0b43fe1"
+    }
+  ],
+  "version": "2.7"
+}

@@ -1,0 +1,59 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/>
+<meta name="theme-color" content="#0a1017"/><title>暮色边境 | V2.9 港区统一美术</title>
+<link rel="stylesheet" href="src/style.css"/>
+</head><body>
+<div id="app">
+ <canvas id="world" aria-label="真实 3D 战术生存战场"></canvas><canvas id="overlayCanvas"></canvas>
+ <div class="vignette"></div><div class="noise"></div>
+ <div id="gameUI" class="hidden ui-layer">
+  <header class="topBar">
+   <div class="gameName"><div class="brandMark">◇</div><div><b>暮色边境</b><small>DUSK FRONTIER <em>//</em> V2.9 HARBOR ART</small></div></div>
+   <div class="topMid"><span class="online"><i></i> 单人行动</span><div>存活 <b id="aliveValue">8</b></div><div>击败 <b id="killsValue">0</b></div><div>时间 <b id="timeValue">00:00</b></div></div>
+   <div class="topRight"><button class="square" id="visualBtn" title="GLB 人物渲染">GLB</button><button class="square" id="helpBtn" title="操作说明">?</button><button class="square" id="pauseBtn" title="暂停游戏">Ⅱ</button></div>
+  </header>
+  <aside id="missionPanel" class="missionPanel">
+   <div class="tinyTitle"><span class="amberline"></span> 主要目标 <small>PRIMARY OBJECTIVES</small></div>
+   <h2 id="missionTitle">潜入 · 取证 · 撤离</h2><p id="objectiveBrief">找到并回收三份关键情报</p>
+   <div class="objective" id="obj0"><span class="taskNumber">01</span><div>仓库终端<small>WAREHOUSE RELAY</small></div><b id="obj0status">待完成</b></div>
+   <div class="objective" id="obj1"><span class="taskNumber">02</span><div>走私清单<small>CONTAINER YARD</small></div><b id="obj1status">待完成</b></div>
+   <div class="objective" id="obj2"><span class="taskNumber">03</span><div>警戒密钥<small>WEST CHECKPOINT</small></div><b id="obj2status">待完成</b></div>
+   <div class="missionStats"><span>情报 <strong id="intelValue">0/3</strong></span><span class="alarmState">警戒 <strong id="alertValue">隐蔽</strong></span><span id="zoneClock">毒区启动 02:35</span></div>
+  </aside>
+  <aside class="miniPanel"><div class="miniHead"><span>潮汐工业港区</span><i>LIVE FEED</i></div><canvas id="minimap" width="194" height="194"></canvas><div class="miniLegend"><span><i class="dot self"></i>己方</span><span><i class="dot hostile"></i>敌人</span><span><i class="dot intel"></i>目标</span></div></aside>
+  <div class="location"><span id="tacticalStatus" class="tacticalStatus">◇ 暴露</span><span class="pin">◆</span><span id="currentZone">中央仓储区</span><small>SECTOR 03 / RESTRICTED</small></div>
+  <div id="interactPrompt" class="interact hidden"><span class="keycap">E</span><span id="interactDescription">拾取情报</span></div>
+  <div class="bottomHUD"><div class="vitals">
+   <div class="vitalHead"><span><i class="healthCross">✚</i> 生命值</span><strong id="lifeValue">100</strong></div>
+   <div class="bar"><i id="lifeBar" style="width:100%"></i></div><div class="secondaryVitals"><span>装甲 <b class="bar mini"><i id="armorBar" style="width:100%"></i></b></span><span>体力 <b class="bar mini stamina"><i id="staminaBar" style="width:100%"></i></b></span></div>
+   </div><div class="weaponBox"><span class="weaponGlyph">⌁</span><div><small id="weaponName">MK18 突击步枪</small><div class="ammo"><strong id="ammoValue">30</strong><span>/</span><b id="reserveValue">180</b></div></div><span class="caliber" id="weaponSub">5.56 × 45mm</span><i class="reloadProgress" id="reloadBar"></i></div>
+   <div class="equipment"><button id="medBtn" title="F 治疗"><strong>✚</strong><b id="healthItem">3</b><small>治疗</small></button><button id="grenadeBtn" title="G 投掷手雷"><strong>●</strong><b id="grenadeItem">2</b><small>手雷</small></button><button id="smokeBtn" title="Q 烟雾弹"><strong>◌</strong><b id="smokeItem">2</b><small>烟幕</small></button><button id="trapBtn" title="T 捕兽夹"><strong>⌑</strong><b id="trapItem">3</b><small>陷阱</small></button><button id="reloadBtn" title="R 换弹"><strong>↻</strong><small>换弹</small></button><button id="weaponBtn" title="切换武器"><strong>⇆</strong><small>武器</small></button></div>
+  </div>
+  <div class="bottomTips"><span>WASD 移动</span><span>H 极简界面 / Tab 任务</span><span>X 蹲伏 / C 闪避</span><span>鼠标左键射击 / 右键寻路</span><span>Shift 冲刺</span><span>R 换弹</span><span>E 交互</span><span>F 医疗</span><span>G 手雷</span><span>Q 烟幕</span><span>T 陷阱</span><span>滚轮小幅缩放</span><span>1/2/3 切枪</span><span>P 切换3D人物</span></div>
+  
+  <div class="touchHUD"><div class="joystick" id="joystick"><div class="joystickOuter"></div><div class="joystickNub" id="joystickNub"></div></div><div class="touchActions"><button id="interactBtn">E</button><button id="shootBtn" class="shootBtn"><span>⌖</span></button></div></div>
+ </div>
+ <div id="toast" class="toast" role="status"></div>
+ <section id="startScreen" class="startScreen">
+  <div class="startArt" aria-hidden="true"></div><div class="menuGrid"></div>
+  <div class="menuContent"><div class="studio">ORIGINAL TACTICAL SURVIVAL <span>■</span> SEASON 01</div>
+   <div class="wordmark"><span class="logoAccent">◇</span><h1>暮色<span>边境</span></h1><div>BORDERLAND <span>/</span> OPERATION DUSK</div></div>
+   <div class="separator"></div><h2>潮汐港区行动<span class="season">ACT 01</span></h2><p class="introText">深入被封锁的工业禁区。绕开巡逻守卫、<br/>回收三份情报、突破封锁并安全撤离。</p>
+   <div class="modeSelect"><div><small>战场模式</small><b>单人战术突围</b></div><span class="modeLine"></span><div><small>战场</small><b>潮汐港区 · 模块化样板区</b></div></div>
+   <div class="difficulty"><span>难度</span><button id="easyBtn" class="selected">标准</button><button id="hardBtn">硬核</button></div>
+   <button id="playBtn" class="playBtn"><b>▶</b> 进入战区 <span>START MISSION</span></button>
+   <div class="menuFoot">原生 WebGL2 / 软件兼容 <i>•</i> V2.9 同步工业模块与材质 <i>•</i> 保留移动 / 射击 / 撤离 <i>•</i> 离线运行</div>
+  </div>
+  <div class="menuBottom"><span>FIELD OPERATION <b>01 / 01</b></span><span>ENGINE / WEBGL2 + CANVAS FALLBACK</span><span>LOCAL SINGLE-PLAYER</span></div>
+ </section>
+ <section id="pauseScreen" class="modal hidden"><div class="modalPanel"><span class="kicker">MISSION INTERRUPTED</span><h2>暂 停</h2><p>战区行动已暂停。可以继续行动或重新部署。</p><button class="primary" id="resumeBtn">继续行动 <span>→</span></button><button class="secondary" id="pauseRestart">重新开始</button><button class="secondary" id="pauseQuit">返回大厅</button><button class="secondary" id="sfxBtn">音效：开</button></div></section>
+ <section id="resultScreen" class="modal hidden"><div class="modalPanel result"><span id="resultKicker" class="kicker">MISSION ACCOMPLISHED</span><h2 id="resultTitle">撤离成功</h2><p id="resultDescription">行动完成</p>
+  <div class="resultGrade" id="statGrade">A</div><div class="statGrid"><div><b id="statIntel">3/3</b><span>情报回收</span></div><div><b id="statKills">0</b><span>击败</span></div><div><b id="statTime">00:00</b><span>作战时间</span></div><div><b id="statShots">0%</b><span>命中率</span></div><div><b id="statDamage">0</b><span>伤害</span></div></div>
+  <button class="primary" id="retryBtn">再次出击 <span>→</span></button><button class="secondary" id="quitBtn">返回大厅</button></div></section>
+ <section id="helpScreen" class="modal hidden"><div class="modalPanel guide"><span class="kicker">OPERATIONS MANUAL</span><h2>操作指南</h2><p>暮色港区样板区：利用掩体推进，观察敌人朝向与火力反馈，搜集三份情报后前往西侧撤离信标。</p>
+  <div class="guideGrid"><span>W A S D / 方向键</span><b>移动</b><span>鼠标 / 左键</span><b>瞄准 / 连续射击</b><span>鼠标右键</span><b>自动寻路</b><span>Shift / C</span><b>冲刺 / 翻滚</b><span>1 / 2 / R</span><b>武器切换 / 换弹</b><span>F / G / Q / T</span><b>治疗 / 手雷 / 烟幕 / 捕兽夹</b><span>E</span><b>获取情报 / 撤离</b><span>滚轮</span><b>小幅缩放</b></div>
+  <button class="primary" id="closeHelp">返回 <span>→</span></button></div></section>
+ <section id="errorPanel" class="modal hidden"><div class="modalPanel"><h2>图形功能不可用</h2><p id="errorText">需要 WebGL2 浏览器</p><p>请使用新版 Chrome、Edge 或 Safari 打开。</p></div></section>
+</div>
+<script src="src/render.js"></script><script src="src/world.js"></script><script src="src/gltf_actor.js"></script><script src="src/weapons.js"></script><script src="src/game.js"></script>
+</body></html>
